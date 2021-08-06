@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Jquery tag:eq(3)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function getElementByIndex() {
+        alert($("div:eq(3)").html());
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="getElementByIndex()"
+      type="button"
+      value="Click Here"
+      style="color: red"
+    />
+    <div style="float: left; width: 100%">This is first div</div>
+    <div style="float: left; width: 100%">This is 2nd div</div>
+    <div style="float: left; width: 100%">This is 3rd div</div>
+    <div style="float: left; width: 100%">This is 4th div</div>
+    <div style="float: left; width: 100%">This is 5th div</div>
+  </body>
+</html>

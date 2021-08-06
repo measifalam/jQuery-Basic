@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript">
+      $(document).ready(function () {
+      $(document).mousemove(function (event) {
+      var x = event.pageX; var y = event.pageY;
+      $("span").text("pageX: " + x + ", pageY: " + y);
+      });
+      });
+    </script>
+  </head>
+  <body>
+    <br /><br />
+    <center>
+      <p>The Position of Mouse is at: <span></span></p>
+    </center>
+  </body>
+</html>

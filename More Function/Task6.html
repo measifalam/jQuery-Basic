@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript">
+      function getHeight() {
+      alert("The height for the div is " + $("#divContent").height() + "px.");
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="getHeight()"
+      type="button"
+      value="Get Height"
+      style="color: red"
+    />
+    <div id="divContent" style="width: 200px; height: 60px">Hello World</div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript">
+      function getVal() {
+      alert($("#ddlGender").val());
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="getVal()"
+      type="button"
+      value="Get Val"
+      style="color: red"
+    />
+    <select id="ddlGender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+  </body>
+</html>

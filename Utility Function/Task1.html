@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function loopWithEach() {
+        $("ul li").each(function () {
+          $(this).css("color", "red");
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="button" onclick="loopWithEach();" value="Click Here" />
+    </div>
+    <ul>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ul>
+  </body>
+</html>

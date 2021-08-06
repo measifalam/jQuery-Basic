@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function checkArray() {
+        var myArray = ["Pete", "John", "Andy"];
+        $("#spnPosition").html($.inArray("John", myArray));
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input
+        type="button"
+        onclick="checkArray();"
+        value="check Array Position"
+      />
+    </div>
+    <span>John is at position: </span>
+    <br />
+    <span id="spnPosition"></span>
+  </body>
+</html>

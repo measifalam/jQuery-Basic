@@ -1,0 +1,12 @@
+<html>
+<body>
+<h2 id="myText">After mouse has gone, the text becomes orange.</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$('h2#myText').mouseout(function(){
+$('h2#myText').css('color','orange');
+});
+});
+</script>
+</html>

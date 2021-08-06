@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>jQuery tag attribute</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function getTitle() {
+        alert($("div[ title ]").html());
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="getTitle( )"
+      type="button"
+      value="Click Here"
+      style="color: red"
+    />
+    <div title="This is title" style="float: left; width: 100%">
+      Hello World. I am div
+    </div>
+  </body>
+</html>

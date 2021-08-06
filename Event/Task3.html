@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript">
+      $(document).ready(function () {
+      $("#btnClick").click(function () {
+      alert("I am Click Event");
+      });
+      $("#btnMouseOver").mouseover(function () {
+      alert("I am Mouse Over Event");
+      });
+      $("#btnMouseLeave").mouseleave(function () {
+      alert("I am Mouse Leave Event");
+      });
+      });
+    </script>
+  </head>
+  <body>
+    <input
+      id="btnClick"
+      type="button"
+      value="Click Event"
+      style="color: gray"
+    />
+    <input
+      id="btnMouseOver"
+      type="button"
+      value="Mouse Over Event"
+      style="color: gray"
+    />
+    <input
+      id="btnMouseLeave"
+      type="button"
+      value="Mouse Leave Event"
+      style="color: gray"
+    />
+  </body>
+</html>

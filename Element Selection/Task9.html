@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function checkElementByTag() {
+        alert($("#divHello").is("div"));
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="checkElementByTag( )"
+      type="button"
+      value="Click Here"
+      style="color: red"
+    />
+    <div id="divHello" style="float: left; width: 100%">Hello world</div>
+  </body>
+</html>

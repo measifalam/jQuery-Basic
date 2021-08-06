@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>This is Test Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript">
+      function getCheckedCount() {
+      alert($("input:checked").length);
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="getCheckedCount( )"
+      type="button"
+      value="Click Here"
+      style="color: red"
+    />
+    <input type="checkbox" value="Apple" checked="checked" />Apple
+    <input type="checkbox" value="Banana" />Banana
+    <input type="checkbox" value="Peach" checked="checked" />Peach
+    <input type="checkbox" value="Mango" />Mango
+  </body>
+</html>

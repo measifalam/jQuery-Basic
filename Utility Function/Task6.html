@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function getUniqueValues() {
+        var myArr = [2, 5, 5, 7, 7, 8];
+        alert("Before using unique Method : " + myArr);
+        myArr = $.unique(myArr); //remove duplicate values
+        var val = "";
+        for (var i = 0; i < myArr.length; i++) {
+          val += myArr[i] + ","; //get all unique values
+        }
+        val = val.slice(0, -1); //remove last comma
+        alert("After using unique Method : " + val);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="button" onclick="getUniqueValues();" value="Click Here" />
+    </div>
+  </body>
+</html>

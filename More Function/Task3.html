@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript">
+      function setGetText() {
+      alert("Before Changing text is: " + $("#divContent").text());
+      $("#divContent").text("Hello World text is changed");
+      alert("After Changing text is: " + $("#divContent").text());
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="setGetText()"
+      type="button"
+      value="Click Here"
+      style="color: red"
+    />
+    <div id="divContent">Hello World I am text</div>
+  </body>
+</html>

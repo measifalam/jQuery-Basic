@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Jquery selected option</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function getSelectedValue() {
+        alert($("select option:selected").text());
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="getSelectedValue()"
+      type="button"
+      value="Click Here"
+      style="color: red"
+    />
+    <select>
+      <option>First</option>
+      <option selected>second</option>
+      <option>third</option>
+    </select>
+  </body>
+</html>

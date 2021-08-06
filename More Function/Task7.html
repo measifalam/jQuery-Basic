@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript">
+      function insertContentBefore() {
+      $("#divContent").before(" <div>This is new text</div>");
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="insertContentBefore()"
+      type="button"
+      value="Insert Before"
+      style="color: red"
+    />
+    <div id="divContent" style="width: 200px; height: 20px; color: Green">
+      Hello World
+    </div>
+  </body>
+</html>

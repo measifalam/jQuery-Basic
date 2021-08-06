@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function getHtmlByTitle() {
+        alert($("div[title='2nd']").html());
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="getHtmlByTitle()"
+      type="button"
+      value="Click Here"
+      style="color: red"
+    />
+    <div title="first" style="float: left; width: 100%">This is first div</div>
+    <div title="2nd" style="float: left; width: 100%">This is 2nd div</div>
+  </body>
+</html>

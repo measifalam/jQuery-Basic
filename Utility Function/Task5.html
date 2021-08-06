@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function grepFunc() {
+        var oldArray = [1, 5, 3, 8, 6, 7, 9, 11, 15, 13];
+        newArray = $.grep(oldArray, function (n, i) {
+          return n !== 15 && i > 3;
+          // oldArray represents the existing array name
+          // n represents the elements' value of oldArray
+          // i represents the index number of oldArray
+        });
+        $("#grepValues").html(newArray.join(", "));
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="button" onclick="grepFunc();" value="Click Here" />
+    </div>
+    <div style="padding: 5px">
+      Values before grep:<span style="color: green">
+        1, 5, 3, 8, 6, 7, 9,11,15,13</span
+      >
+    </div>
+    <div style="padding: 5px">
+      Values after grep: <span id="grepValues" style="color: red"></span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>This is YARD 1</title>
+    <!--Import jQuery Library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- jQuery Implementation-->
+    <script type="text/javascript">
+        function getchild() {
+        alert($("p span").length);
+        }
+        </script>
+  </head>
+
+  <body>
+    <div onclick="getchild()" style="cursor: pointer; width: 300px; height: 20px; color: red;">
+        Click here
+        </div>
+        <p>
+        <span style="float: left; width: 100%; padding: 5px;">This is top level child </span>
+        <span style="float: left; width: 100%; padding: 5px;">This is top level child </span>
+        <span style="float: left; width: 100%; padding: 5px;">This is top level child
+          <span style="float: left; width: 100%; padding: 5px;">This is sub level child </span>
+        </span>
+        </p>
+  </body>
+</html>

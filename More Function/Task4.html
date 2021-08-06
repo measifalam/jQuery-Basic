@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript">
+      function appendHtml() {
+      $("#divContent").append("</br> This is new content");
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      onclick="appendHtml()"
+      type="button"
+      value="Click Here"
+      style="color: red"
+    />
+    <div id="divContent">Hello World</div>
+  </body>
+</html>
